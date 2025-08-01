@@ -3833,16 +3833,33 @@ body {
 			.timeline {
 			position: relative;
 			margin-left: 30px;
-			padding-left: 20px;
+			padding-left: 20px;			
 			border-left: 2px solid #00aaff;
-			}
+			display: flex;
+			flex-wrap: wrap;
+			gap: 15rem;
+			}			
+			
 
 			.timeline-item {
 			position: relative;
 			margin-bottom: 30px;
+			
 			}
 
 			.timeline-item .dot {
+			position: absolute;
+			left: -47px;
+			top: 5px;
+			width: 15px;
+			height: 15px;
+			background-color: #00aaff;
+			border-radius: 50%;
+			border: 2px solid #fff;
+			box-shadow: 0 0 0 2px #00aaff;
+			}
+
+			.timeline-item .dot1 {
 			position: absolute;
 			left: -27px;
 			top: 5px;
@@ -3853,6 +3870,7 @@ body {
 			border: 2px solid #fff;
 			box-shadow: 0 0 0 2px #00aaff;
 			}
+			
 
 			.timeline-item .content h3 {
 			margin: 0;
@@ -3864,11 +3882,178 @@ body {
 			margin: 5px 0 0;
 			color: #555;
 			font-size: 14px;
+			word-break: break-word;
+			white-space: normal;
 			}
 
+			
+			.timeline-item01{
+               flex: 1;
+			   flex-basis: 300px;   
+			   padding: 20px;
+			   min-width: 250px;     
+			   max-width: 100%;     
+			   box-sizing: border-box;
+			}
+
+			.timeline-item02{
+			position: relative;
+			margin-left: 30px;
+			padding-left: 20px;			
+			border-left: 2px solid #00aaff;
+            flex: 1;
+			flex-basis: 300px;   
+			padding: 20px;
+			min-width: 250px;    
+			max-width: 100%;     
+			box-sizing: border-box;
+			}
+
+			@media (max-width: 768px) {
+			.timeline {
+				flex-direction: column; /* Stack items vertically */
+				gap: 2rem;
+				margin-left: 0;
+				padding-left: 10px;
+				border-left: none; /* Optional: remove vertical line */
+			}
+
+			.timeline-item01,
+			.timeline-item02,
+			.timeline-item {
+				flex: 1 1 100%;
+				max-width: 100%;
+				padding: 15px 10px;
+				margin-left: 0;
+				border-left: none;
+				box-sizing: border-box;
+			}
+
+			.timeline-item .dot,
+			.timeline-item .dot1 {
+				left: -10px; /* Move dot closer for mobile layout */
+				top: 5px;
+			}
+
+			.timeline-item .content h3,
+			.timeline-item .content p {
+				text-align: left;
+			}
+			}
+
+			#interests {
+			background-color: #f9f9f9; /* Light background for contrast */
+			padding: 40px 20px;
+			border-radius: 8px;
+			box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+			max-width: 900px;
+			margin: 0 auto;
+			}
+
+			#interests h2 {
+			text-align: center;
+			font-size: 28px;
+			margin-bottom: 20px;
+			color: #00aaff;
+			font-weight: 700;
+			}
+
+			#interests ul {
+			list-style: none;
+			padding: 0;
+			display: grid;
+			grid-template-columns: 1fr 1fr; /* 2 columns on desktop */
+			gap: 10px 30px;
+			}
+
+			#interests ul li {
+			padding-left: 25px;
+			position: relative;
+			font-size: 16px;
+			color: #333;
+			line-height: 1.6;
+			}
+
+			#interests ul li::before {
+			content: "✔";
+			position: absolute;
+			left: 0;
+			color: #00aaff;
+			font-size: 16px;
+			}
+
+			/* Responsive: Stack items on small screens */
+			@media (max-width: 768px) {
+			#interests ul {
+				grid-template-columns: 1fr;
+			}
+
+			#interests h2 {
+				font-size: 24px;
+			}
+			}
+
+			#projects {
+			padding: 40px 20px;
+			background-color: #fff;
+			max-width: 1500px;
+			margin: 0 auto;
+			}
+
+			#projects h2 {
+			text-align: center;
+			font-size: 28px;
+			margin-bottom: 30px;
+			color: #00aaff;
+			}
+
+			.project-list {
+			 display: grid;
+			grid-template-columns: 1fr 1fr; 
+			gap: 20px 40px;
+			}
+
+			.project {
+			padding: 20px;
+			border-left: 4px solid #00aaff;
+			background-color: #f9f9f9;
+			border-radius: 8px;
+			box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+			}
+
+			.project h3 {
+			margin: 0 0 10px;
+			font-size: 20px;
+			}
+
+			.project h3 a {
+			color: #00aaff;
+			text-decoration: none;
+			}
+
+			.project h3 a:hover {
+			text-decoration: underline;
+			}
+
+			.project p {
+			font-size: 15px;
+			color: #333;
+			line-height: 1.6;
+			}
+            .sub-title{
+				text-align: center;
+				font-size: 18px;
+			    color: #333;
+				margin-top: 5px;
+			}
+			@media (max-width: 768px) {
+			.project-list {
+				grid-template-columns: 1fr; /* Single column on smaller screens */
+			}
+            }
 
 
-
+          
 			@media screen and (max-width: 1280px) {
 
 				#main > .post {
@@ -3876,6 +4061,7 @@ body {
 				}
 
 			}
+
 
 			@media screen and (max-width: 736px) {
 
