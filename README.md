@@ -16,14 +16,16 @@ Sections
 - Projects:Real-world examples of my work with GitHub links
 - Contact: Form for inquiries and social media links
  --- 
-Technologies Used
+ 
+ Technologies Used
 
--HTML5 :Markup structure for content
--CSS3 :Styling and layout (Flexbox, Grid, Responsive design) 
--FontAwesome :Icons for social links 
--FormSubmit :Serverless contact form integration 
--GitHub : Project version control and code hosting 
-
+| Tool / Technology | Description |
+|-------------------|-------------|
+| **HTML5**         | Markup structure for content |
+| **CSS3**          | Styling and layout (Flexbox, Grid, Responsive design) |
+| **FontAwesome**   | Icons for social links |
+| **FormSubmit**    | Serverless contact form integration |
+| **GitHub**        | Project version control and code hosting |
 ---
 
 Featured Projects
