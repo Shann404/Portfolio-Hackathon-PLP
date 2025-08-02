@@ -11,7 +11,6 @@ html, body{
 	font-size: 16pt;
 }
 
-/* Basic */
 
 *, *:before, *:after {
 	box-sizing: inherit;
@@ -319,7 +318,7 @@ ul.icons.alt li .icon:before {
 
 
 
-/* Section */
+/* About Section */
 
 
 header > .date {
@@ -370,8 +369,35 @@ header.major .date:before, header.major .date:after {
 	border-top-color: #e7e2e2;
 }
 
+.about-container {
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+gap: 5rem;
+}
 
-/* Pagination */
+.about-text {
+flex: 1;
+min-width: 280px;
+}
+
+.about-image {
+flex: 1;
+min-width: 250px;
+text-align: center;
+}
+
+.about-image img {
+border-radius: 10px;
+width: 100%;
+max-width:800px;
+max-height: 650px;
+height: auto;
+object-fit: cover;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Pagination */
 
 .pagination {
 	display: inline-flex;
@@ -465,7 +491,7 @@ header.major .date:before, header.major .date:after {
 }
 
 
-/* sub-heading */
+/*sub-heading of heading*/
 .typed-css {
 	line-height: 96%;
 	color:white;
@@ -666,35 +692,7 @@ to { width: 34ch }
 }
 
 
-
-.about-container {
-display: flex;
-flex-wrap: wrap;
-align-items: center;
-gap: 5rem;
-}
-
-.about-text {
-flex: 1;
-min-width: 280px;
-}
-
-.about-image {
-flex: 1;
-min-width: 250px;
-text-align: center;
-}
-
-.about-image img {
-border-radius: 10px;
-width: 100%;
-max-width:800px;
-max-height: 650px;
-height: auto;
-object-fit: cover;
-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
+/* skills section */
 #skills {
 max-width: 1500px;
 margin: auto;
@@ -732,26 +730,28 @@ border-radius: 0px;
 transition: width 1s ease-in-out;
 }
 
+/* education section*/
 .timeline {
-position: relative;
-margin-left: 30px;
-padding-left: 20px;			
-border-left: 2px solid #00aaff;
-display: flex;
-flex-wrap: wrap;
-gap: 15rem;
-}			
+  position: relative;
+  margin-left: 0;
+  padding-left: 30px;
+  border-left: 2px solid #00aaff;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
 
 
 .timeline-item {
 position: relative;
 margin-bottom: 30px;
+padding-left: 20px;
 
 }
 
 .timeline-item .dot {
 position: absolute;
-left: -47px;
+left: -58px;
 top: 5px;
 width: 15px;
 height: 15px;
@@ -811,36 +811,7 @@ max-width: 100%;
 box-sizing: border-box;
 }
 
-@media (max-width: 768px) {
-.timeline {
-	flex-direction: row; /* Stack items vertically */
-	margin-left: 0;
-	padding-left: 10px;
-}
-
-.timeline-item01,
-.timeline-item02,
-.timeline-item {
-	flex: 1 1 100%;
-	max-width: 100%;
-	padding: 15px 10px;
-	margin-left: 0;
-	border-left: none;
-	box-sizing: border-box;
-}
-
-.timeline-item .dot,
-.timeline-item .dot1 {
-	left: -10px; /* Move dot closer for mobile layout */
-	top: 5px;
-}
-
-.timeline-item .content h3,
-.timeline-item .content p {
-	text-align: left;
-}
-}
-
+/* interests section */
 #interests {
 background-color: #f9f9f9; /* Light background for contrast */
 padding: 40px 20px;
@@ -893,6 +864,7 @@ font-size: 16px;
 }
 }
 
+/* project section */
 #projects {
 padding: 40px 20px;
 background-color: #fff;
@@ -953,7 +925,7 @@ line-height: 1.6;
 }
 
 
-/* Footer */
+/* Footer contact section */
 
 #footer {
 	display: flex;
@@ -1165,6 +1137,7 @@ padding: 0;
 
 }
 
+/* copyright section */
 #copyright {
 	position: relative;
 	color: rgba(255, 255, 255, 0.25);
