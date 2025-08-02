@@ -18,11 +18,11 @@ Sections
  --- 
 Technologies Used
 
-1.HTML5 :Markup structure for content
-2.CSS3 :Styling and layout (Flexbox, Grid, Responsive design) 
-3.FontAwesome :Icons for social links 
-4.FormSubmit :Serverless contact form integration 
-5.GitHub : Project version control and code hosting 
+-HTML5 :Markup structure for content
+-CSS3 :Styling and layout (Flexbox, Grid, Responsive design) 
+-FontAwesome :Icons for social links 
+-FormSubmit :Serverless contact form integration 
+-GitHub : Project version control and code hosting 
 
 ---
 
